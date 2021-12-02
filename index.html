@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
@@ -17,10 +18,8 @@
 </style>
 <body>
 
-<link href="css/contact-form.css" rel="stylesheet">
-
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
     <img src="img/logo.jpg" style="width:100%" onclick="onClick(this)" alt="logo">
@@ -28,16 +27,14 @@
   </div>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Past Projects</a> 
-    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pricing</a> 
+    <a href="#excavation" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Excavation</a> 
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+<header class="w3-container w3-top w3-hide-large w3-gray w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-gray w3-margin-right" onclick="w3_open()">☰</a>
   <span>Company Name</span>
 </header>
 
@@ -48,166 +45,84 @@
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Services</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-  </div>
-  
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="" style="width:100%" onclick="onClick(this)" alt="">
-      <img src="" style="width:100%" onclick="onClick(this)" alt="">
-      <img src="" style="width:100%" onclick="onClick(this)" alt="">
-    </div>
-
-    <div class="w3-half">
-      <img src="" style="width:100%" onclick="onClick(this)" alt="">
-      <img src="" style="width:100%" onclick="onClick(this)" alt="">
-      <img src="" style="width:100%" onclick="onClick(this)" alt="">
-    </div>
-  </div>
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
+  <div class="w3-container" style="margin-top:80px" id="excavation">
+    <h1 class="w3-jumbo"><b>Excavation</b></h1>
+    <hr style="width:50px;border:5px solid #eba922" class="w3-round">
   </div>
 
   <!-- Services -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Excavation.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  <div class="w3-container" id="services" style="margin-top:20px">
+
+    <hr style="width:50px;border:5px;text-align:center solid #eba922" class="w3-round">
+    <p>Local excavation contractor in Wenatchee specializing in site utilities and development, from water lines to power lines and everything in between.
+      <br><br>
+      Licensed, bonded, and insured to tackle any job you have.
     </p>
   </div>
-  
-  <!-- Designers -->
-  <div class="w3-container" id="designers" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Electrical Work.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>The best team in the world.</p>
-    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <p><b>Our designers are thoughtfully chosen</b>:</p>
-  </div>
 
-  <!-- Designers -->
-  <div class="w3-container" id="designers" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Consulting.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>The best team in the world.</p>
-    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <p><b>Our designers are thoughtfully chosen</b>:</p>
-  </div>
-
-  <!-- Packages / Pricing Tables -->
-  <div class="w3-container" id="packages" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Pricing.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16">Floorplanning</li>
-        <li class="w3-padding-16">10 hours support</li>
-        <li class="w3-padding-16">Photography</li>
-        <li class="w3-padding-16">20% furniture discount</li>
-        <li class="w3-padding-16">Good deals</li>
-        <li class="w3-padding-16">
-          <h2>$ 199</h2>
-          <span class="w3-opacity">per room</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-        
-    <div class="w3-half">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
-        <li class="w3-padding-16">Floorplanning</li>
-        <li class="w3-padding-16">50 hours support</li>
-        <li class="w3-padding-16">Photography</li>
-        <li class="w3-padding-16">50% furniture discount</li>
-        <li class="w3-padding-16">GREAT deals</li>
-        <li class="w3-padding-16">
-          <h2>$ 249</h2>
-          <span class="w3-opacity">per room</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-  
-  <!-- Contact -->
-  <div class="w3-container" id="designers" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <div class="fcf-body">
-
-      <div id="fcf-form">
-      <h3 class="fcf-h3">Contact us</h3>
-  
-      <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-          
-          <div class="fcf-form-group">
-              <label for="Name" class="fcf-label">Your name</label>
-              <div class="fcf-input-group">
-                  <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-              </div>
-          </div>
-  
-          <div class="fcf-form-group">
-              <label for="Email" class="fcf-label">Your email address</label>
-              <div class="fcf-input-group">
-                  <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-              </div>
-          </div>
-  
-          <div class="fcf-form-group">
-              <label for="Message" class="fcf-label">Your message</label>
-              <div class="fcf-input-group">
-                  <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-              </div>
-          </div>
-  
-          <div class="fcf-form-group">
-              <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-          </div>
-  
-          <div class="fcf-credit" id="fcf-credit">
-          Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a>
-          </div>
-  
-      </form>
+    <!-- Photo grid (modal) -->
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <img src="img/IMG_3058.jpeg" style="width:50%" onclick="onClick(this)" alt="">
+        <img src="img/IMG_3001.jpeg" style="width:50%" onclick="onClick(this)" alt="">
+        <img src="img/IMG_3054.jpeg" style="width:50%" onclick="onClick(this)" alt="">
       </div>
   
-  </div>
+      <div class="w3-half">
+        <img src="img/IMG_2918.jpeg" style="width:50%" onclick="onClick(this)" alt="">
+        <img src="img/IMG_2916.jpeg" style="width:50%" onclick="onClick(this)" alt="">
+        <img src="img/IMG_2877.jpeg" style="width:50%" onclick="onClick(this)" alt="">
+      </div>
+    </div>
   
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+      <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
+      </div>
+    </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge"><b>Contact.</b></h1>    
+    <hr style="width:50px;border:5px solid #eba922" class="w3-round">
+    <p>Contact us to get a quote. Submit the form below or call Christian at 
+      <a href="https://www.google.com/search?q=elemental+earthworks+wenatchee&rlz=1C5CHFA_enUS892US892&oq=elemen&aqs=chrome.1.69i60j69i59l2j69i57j0i67i433j46i67i199i465j69i61l2.3699j0j7&sourceid=chrome&ie=UTF-8#">(541) 613-7859</a>
+    </p>
   </div>
-<script src="fcf-assets/js/lang/fcf.en.js"></script>
-<script src="fcf-assets/js/fcf.just-validate.min.js"></script>
-<script src="fcf-assets/js/fcf.form.js"></script>
 
+  <div>
 
+  </div>
+
+  <div>
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mdobnbdp" method="post">
+      <fieldset id="fs-frm-inputs">
+        <label for="full-name">Full Name</label>
+        <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+        <label for="email-address">Email Address</label>
+        <input type="email" name="_replyto" id="email-address" placeholder="youremail@email.com" required="">
+        <label for="message">How can we help?</label>
+        <textarea rows="5" name="message" id="message" placeholder="Enter text here." required=""></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+      </fieldset>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+    
+  
+  <div class="container">
+    <div class="center" >
+      <a href="https://www.google.com/search?q=elemental+earthworks+wenatchee&rlz=1C5CHFA_enUS892US892&sxsrf=AOaemvKidfjHcc-LcqIaPFOweB_F6CK24g%3A16384127
+      84295&ei=8DGoYfGTEczL0PEPqbaiwAo&ved=0ahUKEwjxy4Kgi8T0AhXMJTQIHSmbCKgQ4dUDCA4&uact=5&oq=elemental+earthworks+wenatchee&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKA
+      BOgcIIxCwAxAnOgYIABAWEB5KBQg8EgExSgQIQRgBSgQIRhgAUIkCWNkOYIoQaAFwAHgAgAFkiAHSBpIBAzkuMZgBAKABAcgBAcABAQ&sclient=gws-wiz#lrd=0xaa198105dcb82b3:0xe8dfc9
+      82bd467831,3,,,">
+        <button type="button">Write a Review</button>
+      </a>
+    </div>  
+  </div>
 
 <!-- End page content -->
 </div>
